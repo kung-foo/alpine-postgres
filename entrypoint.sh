@@ -1,4 +1,6 @@
 #!/bin/sh
+set -ex
+
 chown -R postgres "$PGDATA"
 
 if [ -z "$(ls -A "$PGDATA")" ]; then
