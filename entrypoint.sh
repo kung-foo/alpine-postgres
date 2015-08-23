@@ -1,5 +1,7 @@
-#!/bin/sh
-set -ex
+#!/usr/bin/env sh
+set -e
+
+[ ! -z "$DEBUG" ] && set -ex
 
 chown -R postgres "$PGDATA"
 
